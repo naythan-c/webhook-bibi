@@ -1,0 +1,375 @@
+{
+   "General":[
+      {
+         "name":"About",
+         "info":"Tells what Bibi Bot is about",
+         "usage":"bb about"
+      },
+      {
+         "name":"Avatar",
+         "info":"Get avatar of yourself/user from the server",
+         "usage":"bb avatar @user(optional)"
+      },
+      {
+         "name":"Calculate",
+         "info":"Ask Bibi to calculate something.",
+         "usage":"bb calc <your expression>"
+      },
+      {
+         "name":"Discord server",
+         "info":"Get link to Bibis official discord server",
+         "usage":"bb discord"
+      },
+      {
+         "name":"Invite",
+         "info":"Invite Bibi to your server",
+         "usage":"bb invite"
+      },
+      {
+         "name":"Partners",
+         "info":"Get the list of official partners of Bibi Bot",
+         "usage":"bb partners"
+      },
+      {
+         "name":"Poll",
+         "info":"Create a poll",
+         "usage":"bb not sure how lol"
+      },
+      {
+         "name":"Server Info",
+         "info":"Get some info of the current server.",
+         "usage":"bb avatar @user(optional)"
+      },
+      {
+         "name":"Stats",
+         "info":"Get stats of the bot.",
+         "usage":"bb stats"
+      },
+      {
+         "name":"User Info",
+         "info":"Get info about some user from the server",
+         "usage":"bb user-info @user(optional)"
+      },
+      {
+         "name":"Vote",
+         "info":"Vote for BIbi on top.gg",
+         "usage":"bb vote"
+      }
+   ],
+   "Brawl Stars":[
+      {
+         "name":"Brawl Post",
+         "info":"Fetch a post from the Brawl Stars subreddit",
+         "usage":"bb brawl-post"
+      },
+      {
+         "name":"Brawl Topic",
+         "info":"Generates a random Brawl Stars topic",
+         "usage":"bb brawl-topic"
+      },
+      {
+         "name":"Bull Mad",
+         "info":"Displays a mad Bull emote",
+         "usage":"bb bull-mad"
+      },
+      {
+         "name":"Check Bush",
+         "info":"Fun command to check if Bibi is in the bush",
+         "usage":"bb check-bush"
+      },
+      {
+         "name":"Colt Sob",
+         "info":"Displays a crying Colt emote",
+         "usage":"bb colt-sob"
+      },
+      {
+         "name":"Mortis Laugh",
+         "info":"Displays a laughing Mortis emote",
+         "usage":"bb mortis-laugh"
+      },
+      {
+         "name":"Rate Me",
+         "info":"Generates a fun random Brawl Stars rating for you",
+         "usage":"bb rate-me"
+      },
+      {
+         "name":"Shelly Shrug",
+         "info":"Displays a shrugging Shelly emote",
+         "usage":"bb shelly-shrug"
+      },
+      {
+         "name":"Spike Love",
+         "info":"Displays a loving Spike emote",
+         "usage":"bb spike-love"
+      },
+      {
+         "name":"Trash",
+         "info":"Generates the Brawl Stars \"trash\" meme using your avatar",
+         "usage":"bb trash <optional mention>"
+      },
+      {
+         "name":"Trophy Count",
+         "info":"Generates a random trophy count for you",
+         "usage":"bb trophy-count"
+      },
+      {
+         "name":"TV",
+         "info":"Displays popular Brawl Stars channels to watch",
+         "usage":"bb tv"
+      }
+  ],
+  "Config":[
+    {
+      "name":"Disable Config",
+      "info":"Used to disable various features of Bibi",
+      "usage":"bb disable-config <all/modlogs/welcomecard/welcomemessage/leavemessage>"
+    },
+    {
+      "name":"Enable Config",
+      "info":"Used to enable various features of Bibi",
+      "usage":"bb enable-config <all/modlogs/welcomecard/welcomemessage/leavemessage>"
+    },
+    {
+      "name":"Reset Prefix",
+      "info":"Resets to original prefix 'bb'",
+      "usage":"bb reset-prefix"
+    },
+    {
+      "name":"Set Channel",
+      "info":"Set channels for welcome/leave/modlogs",
+      "usage":"bb set-channel <modlogs/welcomechannel/leavechannel>"
+    },
+    {
+      "name":"Set Language",
+      "info":"Set what language Bibi should talk in",
+      "usage":"bb set-lang <english/spanish/portuguese>"
+    },
+    {
+      "name":"Set Message",
+      "info":"Set Welcome and Leave messages",
+      "usage":"bb set-message <welcome/leave> <message>"
+    },
+    {
+      "name":"Set Prefix",
+      "info":"Set prefix for bibi (no space)",
+      "usage":"bb set-prefix <prefix>"
+    },
+    {
+      "name":"Set Space Prefix",
+      "info":"Set prefix for Bibi (with space)",
+      "usage":"bb set-space-prefix <prefix>"
+    },
+    {
+      "name":"Set Welcome Card",
+      "info":"Set a nice welcome card.",
+      "usage":"bb set-welcome-card <purple/red/black/white>"
+    }
+  ],
+   "Fun":[
+       {
+          "name":"8Ball",
+          "info":"Ask 8Ball any question",
+          "usage":"bb 8ball <question>"
+       },
+       {
+          "name":"Flip",
+          "info":"Flips a coin",
+          "usage":"bb flip"
+       },
+       {
+          "name":"Meme",
+          "info":"Get a hilarious meme",
+          "usage":"bb meme"
+       },
+       {
+          "name":"Reverse",
+          "info":"Reverse the message you sent",
+          "usage":"bb reverse <message>"
+       },
+       {
+          "name":"Roll",
+          "info":"Roll a die",
+          "usage":"bb roll"
+       },
+       {
+          "name":"Embed",
+          "info":"Puts your message in an embed",
+          "usage":"bb say-embed <message>"
+       },
+       {
+          "name":"Say",
+          "info":"Make the bot say something",
+          "usage":"bb say <message>"
+       },
+       {
+          "name":"Ship",
+          "info":"Ships two people romantically and creates a ship name",
+          "usage":"bb ship <message or mention 1> <optional message or mention 2>"
+       }
+   ],
+   "Games":[
+       {
+          "name":"TicTacToe",
+          "info":"Play tictactoe with another member of the server",
+          "usage":"bb tictactoe @user"
+       },
+       {
+          "name":"Trivia",
+          "info":"Play Trivia with the bot",
+          "usage":"bb trivia"
+       },
+       {
+          "name":"Duel",
+          "info":"Play duel with another member of the server",
+          "usage":"bb duel @user"
+       }
+   ],
+   "Emotes":[
+       {
+          "name":"Anime Hug",
+          "info":"Generates a random anime-hug emote",
+          "usage":"bb anime-hug @user(optional)"
+       },
+       {
+          "name":"Attack",
+          "info":"Generates a random attack emote",
+          "usage":"bb attack @user(optional)"
+       },
+       {
+          "name":"Boop",
+          "info":"Generates a random boop emote",
+          "usage":"bb boop @user(optional)"
+       },
+       {
+          "name":"Cry",
+          "info":"Generates a random crying emote",
+          "usage":"bb boop @user(optional)"
+       },
+       {
+          "name":"Fist Bump",
+          "info":"Generates a random fistbump emote",
+          "usage":"bb fistbump @user(optional)"
+       },
+       {
+          "name":"Hug",
+          "info":"Generates a random hug emote",
+          "usage":"bb hug @user(optional)"
+       },
+       {
+          "name":"Kiss",
+          "info":"Generates a random kissing emote",
+          "usage":"bb kiss @user"
+       },
+       {
+          "name":"L",
+          "info":"Generates a random take the L emote",
+          "usage":"bb l @user(optional)"
+       },
+       {
+          "name":"Nuke",
+          "info":"Generates a random nuking emote",
+          "usage":"bb nuke @user(optional)"
+       },
+       {
+          "name":"Pat",
+          "info":"Generates a random pat emote",
+          "usage":"bb pat @user(optional)"
+       },
+       {
+          "name":"Please",
+          "info":"Generates a random pleading emote",
+          "usage":"bb please @user(optional)"
+       },
+       {
+          "name":"Poke",
+          "info":"Generates a random poking emote",
+          "usage":"bb poke @user(optional)"
+       },
+       {
+          "name":"Slap",
+          "info":"Generates a random slapping emote",
+          "usage":"bb slap @user(optional)"
+       },
+       {
+          "name":"Thonk",
+          "info":"Generates a random thonking emote",
+          "usage":"bb thonk @user(optional)"
+       },
+       {
+          "name":"Triggered",
+          "info":"Generates a random triggered emote",
+          "usage":"bb triggered @user(optional)"
+       },
+       {
+          "name":"Yeet",
+          "info":"Generates a random yeet emote",
+          "usage":"bb yeet @user(optional)"
+       }
+   ],
+   "Filters":[
+       {
+          "name":"Love Filter",
+          "info":"Apply a love filter to your avatar",
+          "usage":"bb love-filter"
+       },
+       {
+          "name":"Night filter",
+          "info":"Apply a Night filter to your avatar",
+          "usage":"bb night-filter"
+       },
+       {
+          "name":"Snipe Filter",
+          "info":"Apply a snipe filter to your avatar",
+          "usage":"bb snipe-filter"
+       },
+       {
+          "name":"Spooky Filter",
+          "info":"Apply a spooky filter to your avatar",
+          "usage":"bb spooky-filter"
+       }
+   ],
+   "Moderation":[
+       {
+          "name":"Ban",
+          "info":"Ban a user. (Ban permissions are required for the bot as well as the mod)",
+          "usage":"bb ban @user"
+       },
+       {
+          "name":"Kick",
+          "info":"Kick a user. (Kick permissions are required for the bot as well as the mod)",
+          "usage":"bb kick @user"
+       },
+       {
+          "name":"Purge",
+          "info":"Clear chats of a channel (Delete message permission id required for the bot as well as the mod)",
+          "usage":"bb purge number(2-100)"
+       }
+   ],
+   "Levelling":[
+       {
+          "name":"Disable Leveling",
+          "info":"Disable leveling for the server",
+          "usage":"bb disable-leveling"
+       },
+       {
+          "name":"Enable Leveling",
+          "info":"Enable leveling for the server",
+          "usage":"bb enable-leveling"
+       },
+       {
+          "name":"Level",
+          "info":"Check self/users level",
+          "usage":"bb level @user(optional)"
+       },
+       {
+          "name":"Leaderboards",
+          "info":"See the leaderboard of the server",
+          "usage":"bb leaderboard"
+       },
+       {
+          "name":"Customize Level Card",
+          "info":"Customize your level card obtained using the level command",
+          "usage":"bb set-level-color <bar/background/text/circle> <#hexcode>"
+       }
+   ]
+}

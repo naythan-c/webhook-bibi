@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en" dir="ltr">
+    <% include ../partials/head %>
+
+    <body>
+        <% include ../partials/header %>
+        <div id='tt'></div>
+
+
+
+        <script>
+        function openCategory(evt, categoryName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(categoryName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        </script>
+
+        <script>
+
+        $(document).ready(function(){
+            if(screen.width>1400){
+                $("#tt").append(`<div id="mainthingy" class="tab">
+                <% for(var item in allcommands){ %>
+                    <button class="tablinks" onclick="openCategory(event, '<%=item.split(' ').join('').toLowerCase()%>')" id="<%=item.split(' ').join('').toLowerCase()%>Header"><%=item%></button>
+                <%}%>
+                </div>
+                <%var count=0%>
+                <% for(var item in allcommands){ %>
+                    <%if(count>0 && count<=3){ %>
+                        <%count=0%>
+                        </div>
+                    <%}%>
+                    <!-- <h1 id="<%=item.split(' ').join('').toLowerCase()%>" class="Categoryheaders"><%=item%></h1> -->
+                    <div id="<%=item.split(' ').join('').toLowerCase()%>" class="tabcontent">
+                    <div class="container" style="margin:0">
+                    <%for(var com in allcommands[item]){%>
+                        <%if(count==3){%>
+                            <%count=0%>
+                            </div>
+                                <div class="container" style="margin:0">
+                        <%}%>
+                        <div>
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h1><%=allcommands[item][com].name
+
+                                      %></h1>
+                                </div>
+                                <div class="flip-card-back">
+                                   <p><%=allcommands[item][com].info%></p>
+                                   <p>Usage: <%=allcommands[item][com].usage%></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <%count++%>
+                    <%}%>
+                </div>
+                <%}%>
+                </div>`)
+            }
+            else{
+                $("#tt").append(`<div id="mainthingy" class="tab">
+                <% for(var item in allcommands){ %>
+                    <button class="tablinks" onclick="openCategory(event, '<%=item.split(' ').join('').toLowerCase()%>')" id="<%=item.split(' ').join('').toLowerCase()%>Header"><%=item%></button>
+                <%}%>
+                </div>
+                <%var count=0%>
+                <% for(var item in allcommands){ %>
+                    <%if(count>0 && count<=2){ %>
+                        <%count=0%>
+                        </div>
+                    <%}%>
+                    <!-- <h1 id="<%=item.split(' ').join('').toLowerCase()%>" class="Categoryheaders"><%=item%></h1> -->
+                    <div id="<%=item.split(' ').join('').toLowerCase()%>" class="tabcontent">
+                    <div class="container" style="margin:0">
+                    <%for(var com in allcommands[item]){%>
+                        <%if(count==2){%>
+                            <%count=0%>
+                            </div>
+                                <div class="container" style="margin:0">
+                        <%}%>
+                        <div>
+                            <div class="flip-card">
+                              <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                  <h1><%=allcommands[item][com].name
+
+                                      %></h1>
+                                </div>
+                                <div class="flip-card-back">
+                                   <p><%=allcommands[item][com].info%></p>
+                                   <p>Usage: <%=allcommands[item][com].usage%></p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <%count++%>
+                    <%}%>
+                </div>
+                <%}%>
+                </div>`)
+            }
+            document.getElementById("generalHeader").click();
+            $("#generalBlock").show()
+            $("li").each(function(){
+                var name=$(this).attr("id");
+                console.log(name)
+                if(name=="commands")
+                $(this).children().addClass("active")
+                else {
+                    $(this).children().removeClass("active")
+                }
+            })
+
+        })
+        </script>
+    </body>
+</html>
